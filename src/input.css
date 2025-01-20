@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+    font-family: "Montserrat", serif;
+}
+
+.bg-gradient::after {
+    background: rgb(221, 0, 0);
+    background: linear-gradient(180deg, rgba(221, 0, 0, 1) 0%, rgba(221, 0, 0, 1) 26%, rgba(0, 0, 0, 1) 100%);
+}
