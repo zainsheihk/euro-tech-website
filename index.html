@@ -18,6 +18,12 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
+    />
     <link href="./src/output.css" rel="stylesheet" />
   </head>
   <body>
@@ -132,11 +138,11 @@
           reputation in front of the clients and suppliers in genuine automotive
           parts industry.
         </p>
-        <button
+        <!-- <button
           class="bg-transparent mt-5 border block border-white mx-auto text-white font-semibold uppercase py-4 px-8 overflow-hidden"
         >
           Contact Us
-        </button>
+        </button> -->
       </div>
     </div>
     <div class="container mb-16">
@@ -294,7 +300,45 @@
       <p class="text-[#616161] text-[16px]">
         View a selection of our most popular makes
       </p>
-      <div class="pt-6 flex justify-center items-center flex-wrap gap-4">
+      <section
+        class="splide pt-10 pb-16"
+        aria-label="Splide Basic HTML Example"
+      >
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide flex justify-center items-end">
+              <img src="./assets/logo/1.png" class="w-[150px]" alt="" />
+            </li>
+
+            <li class="splide__slide flex justify-center items-end">
+              <img src="./assets/logo/3.jpeg" class="w-[150px]" alt="" />
+            </li>
+
+            <li class="splide__slide flex justify-center items-end">
+              <img src="./assets/logo/4.png" class="w-[150px]" alt="" />
+            </li>
+            <li class="splide__slide flex justify-center items-end">
+              <img src="./assets/logo/5.jpeg" class="w-[100px]" alt="" />
+            </li>
+            <li class="splide__slide flex justify-center items-end">
+              <img src="./assets/logo/2.png" class="w-[100px]" alt="" />
+            </li>
+            <li class="splide__slide flex justify-center items-end">
+              <img src="./assets/logo/6.png" class="w-[100px]" alt="" />
+            </li>
+            <li class="splide__slide flex justify-center items-end">
+              <img src="./assets/logo/7.jpg" class="w-[100px]" alt="" />
+            </li>
+            <li class="splide__slide flex justify-center items-end">
+              <img src="./assets/logo/8.png" class="w-[100px]" alt="" />
+            </li>
+            <li class="splide__slide flex justify-center items-end">
+              <img src="./assets/logo/9.jpeg" class="w-[100px]" alt="" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- <div class="pt-6 flex justify-center items-center flex-wrap gap-4">
         <div
           class="bg-[#f0f0f0] p-[32px] w-[13%] self-stretch justify-center items-center flex flex-col text-center"
         >
@@ -365,7 +409,7 @@
         >
           <img src="./assets/logo/14.png" class="w-fit mx-auto" alt="" />
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="container pt-6 flex gap-10 justify-between items-center">
       <div class="w-[23%]"></div>
@@ -480,23 +524,28 @@
       </div>
     </div>
     <div class="container pt-6 gap-6 flex justify-between items-start">
-      <div
-        class="w-[23%] bg-primary-color py-14 pb-8 px-10 overflow-hidden relative self-stretch"
-      >
-        <p class="text-white">Save 25%</p>
-        <h5 class="text-white text-[40px] leading-none font-medium">BUY 3</h5>
-        <h6 class="text-white text-[18px]">Get the 4th free</h6>
-
+      <div class="w-[23%] overflow-hidden relative self-stretch">
         <img
-          src="./assets/images/banner_img_1.png"
-          class="py-10 w-[150%] max-w-[150%] relative -left-8"
+          src="./assets/images/banner_back_2.jpg"
           alt=""
+          class="absolute top-0 left-0 w-full z-[-1]"
         />
-        <button
-          class="bg-secondary-color font-semibold text-[14px] uppercase py-[12px] px-6 rounded-tr-sm rounded-br-sm"
-        >
-          Shop now
-        </button>
+        <div class="relative z-50 py-14 pb-8 px-10">
+          <p class="text-white">Save 25%</p>
+          <h5 class="text-white text-[40px] leading-none font-medium">BUY 3</h5>
+          <h6 class="text-white text-[18px]">Get the 4th free</h6>
+
+          <img
+            src="./assets/images/banner_img_2.png"
+            class="-mb-10 w-[220%] max-w-[220%] relative -left-8"
+            alt=""
+          />
+          <button
+            class="bg-secondary-color font-semibold text-[14px] uppercase py-[12px] px-6 rounded-tr-sm rounded-br-sm relative z-10"
+          >
+            Shop now
+          </button>
+        </div>
       </div>
       <div class="w-[77%] self-stretch">
         <div class="flex justify-between h-full self-stretch">
@@ -557,6 +606,217 @@
         </div>
       </div>
     </div>
+    <div class="container my-5 relative">
+      <div
+        class="relative after:absolute after:top-0 after:left-0 after:w-full after:h-full callout-bg after:z-10"
+      >
+        <img
+          src="./assets/images/banner_back_11.jpg"
+          class="w-full object-cover"
+          alt=""
+        />
+        <div
+          class="flex z-20 px-16 justify-between absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full items-center"
+        >
+          <div>
+            <h3 class="text-white font-medium text-[16px]">
+              Starting at <span class="text-primary-color">$79.00</span>
+            </h3>
+            <h5 class="text-white uppercase text-[18px]">shop and save big</h5>
+            <h6 class="text-white text-[40px] uppercase font-medium">
+              most essentials
+            </h6>
+          </div>
+          <button
+            class="bg-secondary-color font-semibold text-[14px] uppercase px-8 py-3 rounded-tr-sm rounded-br-sm"
+          >
+            Shop Now
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-[#212121] mt-10">
+      <div class="container py-10 flex justify-between items-start">
+        <div class="w-[30%]">
+          <div class="logo max-w-[200px] mb-6">
+            <img src="./assets//images/transparent-logo.png" alt="" />
+          </div>
+          <p class="text-white">
+            We work on market over 20 years. We sale only original auto parts
+            and gained confidence of 320k + clients. Buy from MobiMax, join our
+            big community.
+          </p>
+        </div>
+        <div class="w-[20%]">
+          <h3
+            class="text-white relative font-semibold text-[15px] uppercase pb-3 border-b border-[#ccc6] after:absolute after:left-0 after:bottom-[-1px] after:w-16 after:h-[1px] after:bg-primary-color mb-10"
+          >
+            Customer Services
+          </h3>
+          <ul>
+            <li>
+              <a
+                href=""
+                class="text-[#bdbdbd] mb-2 block transition-all hover:text-white"
+                >Contact us</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-[#bdbdbd] mb-2 block transition-all hover:text-white"
+                >FAQs</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-[#bdbdbd] mb-2 block transition-all hover:text-white"
+                >Store Locator
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-[#bdbdbd] mb-2 block transition-all hover:text-white"
+                >Delivery Information
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-[#bdbdbd] mb-2 block transition-all hover:text-white"
+                >Returns & Refunds</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-[#bdbdbd] mb-2 block transition-all hover:text-white"
+                >Product Recall</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="w-[20%]">
+          <h3
+            class="text-white relative font-semibold text-[15px] uppercase pb-3 border-b border-[#ccc6] after:absolute after:left-0 after:bottom-[-1px] after:w-16 after:h-[1px] after:bg-primary-color mb-10"
+          >
+            ABOUT US
+          </h3>
+          <ul>
+            <li>
+              <a
+                href=""
+                class="text-[#bdbdbd] mb-2 block transition-all hover:text-white"
+                >Site map</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-[#bdbdbd] mb-2 block transition-all hover:text-white"
+                >Careers</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-[#bdbdbd] mb-2 block transition-all hover:text-white"
+                >Affiliate
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-[#bdbdbd] mb-2 block transition-all hover:text-white"
+                >News
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-[#bdbdbd] mb-2 block transition-all hover:text-white"
+                >Partners</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-[#bdbdbd] mb-2 block transition-all hover:text-white"
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="w-[20%]">
+          <h3
+            class="text-white relative font-semibold text-[15px] uppercase pb-3 border-b border-[#ccc6] after:absolute after:left-0 after:bottom-[-1px] after:w-16 after:h-[1px] after:bg-primary-color mb-10"
+          >
+            Contacts
+          </h3>
+          <div>
+            <div class="flex gap-4 mb-5">
+              <i
+                class="fa-solid text-[24px] fa-location-dot text-primary-color"
+              ></i>
+              <p class="text-white text-[16px] font-medium">
+                48 Walwyn Rd, Chapelton
+              </p>
+            </div>
+            <div class="flex gap-4 mb-5">
+              <i class="fa-solid text-[24px] fa-phone text-primary-color"></i>
+              <p class="text-white text-[16px] font-medium">070 5159 1537</p>
+            </div>
+            <div class="flex gap-4 mb-5">
+              <i class="fa-regular text-[24px] fa-clock text-primary-color"></i>
+              <p class="text-white text-[16px] font-medium">
+                Mon. - Sat. 10:00 am - 20:00 pm
+              </p>
+            </div>
+          </div>
+          <div class="">
+            <ul class="flex gap-1">
+              <li>
+                <a
+                  href=""
+                  class="h-10 w-10 bg-[#b00] rounded-md flex justify-center items-center"
+                  ><i class="fa-brands fa-youtube text-white text-[20px]"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="h-10 w-10 bg-[#007bb6] rounded-md flex justify-center items-center"
+                  ><i
+                    class="fa-brands fa-linkedin-in text-white text-[20px]"
+                  ></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="h-10 w-10 bg-[#3b5998] rounded-md flex justify-center items-center"
+                  ><i class="fa-brands fa-facebook-f text-white text-[20px]"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  class="h-10 w-10 bg-[#bc2a8d] rounded-md flex justify-center items-center"
+                  ><i class="fa-brands fa-instagram text-white text-[20px]"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bg-black py-8">
+        <p class="text-[#bdbdbd] container text-center">
+          Euro Tech.com ©2000- 2025 | Euro Tech, Inc. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
   </body>
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
@@ -564,4 +824,22 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   ></script>
+  <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var splide = new Splide(".splide", {
+        type: "loop",
+        perPage: 8,
+        autoplay: true,
+        interval: 2000,
+        perMove: 1,
+        arrows: false,
+        speed: 2000,
+        pagination: false,
+      });
+      splide.mount();
+    });
+  </script>
 </html>
