@@ -20,6 +20,13 @@
       rel="stylesheet"
     />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
       href="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 "
@@ -30,7 +37,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
   <body>
     <header>
       <div class="bg-[#212121] py-3">
-        <div class="container flex gap-5">
+        <div
+          class="container flex gap-5 [@media(max-width:950px)]:justify-center"
+        >
           <div class="flex gap-2">
             <i class="fa-solid fa-location-dot text-primary-color"></i>
             <p class="text-white text-[12px]">48 Walwyn Rd, Chapelton</p>
@@ -47,69 +56,78 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           </div>
         </div>
       </div>
-      <div class="container flex items-center justify-between gap-12 py-4">
+      <div
+        class="container flex items-center justify-between gap-12 py-4 [@media(max-width:1000px)]:gap-6 [@media(max-width:1200px)]:gap-2 [@media(max-width:800px)]:flex-wrap [@media(max-width:800px)]:pt-0"
+      >
         <div class="logo max-w-[200px]">
           <img src="./assets//images/logo.png" alt="" />
         </div>
-        <div class="flex w-full justify-between max-w-[600px]">
+        <div
+          class="flex w-full justify-between max-w-[600px] [@media(max-width:1200px)]:max-w-[400px] [@media(max-width:800px)]:w-full [@media(max-width:800px)]:order-3 [@media(max-width:800px)]:max-w-full [@media(max-width:800px)]:hidden"
+        >
           <input
             type="text"
             placeholder="Search for products..."
-            class="px-5 border border-primary-color focus:outline-none rounded-sm rounded-tl-sm rounded-bl-sm w-full"
+            class="px-5 border border-primary-color focus:outline-none rounded-sm rounded-tl-sm rounded-bl-sm w-full [@media(max-width:1200px)]:text-[14px]"
           />
           <button
-            class="bg-primary-color text-white font-semibold text-[14px] uppercase py-[12px] px-6 rounded-tr-sm rounded-br-sm"
+            class="bg-primary-color text-white font-semibold text-[14px] uppercase py-[12px] px-6 rounded-tr-sm rounded-br-sm [@media(max-width:1200px)]:text-[14px] whitespace-nowrap"
           >
             search
           </button>
         </div>
-        <button
-          class="bg-primary-color text-white font-semibold text-[14px] uppercase py-[10px] px-6 rounded-smoverflow-hidden"
-        >
-          <i class="fa-solid fa-phone text-white"></i>
-          lets talk
-        </button>
+        <div>
+          <button
+            class="bg-primary-color text-white font-semibold text-[14px] uppercase py-[10px] px-6 rounded-smoverflow-hidden whitespace-nowrap [@media(max-width:1200px)]:text-[14px] [@media(max-width:800px)]:hidden"
+          >
+            <i class="fa-solid fa-phone text-white"></i>
+            lets talk
+          </button>
+          <i
+            class="fa-solid fa-bars [@media(min-width:800px)]:hidden text-[30px] text-[#212121]"
+          ></i>
+        </div>
       </div>
-      <div class="bg-[#f5f5f5]">
+      <div class="bg-[#f5f5f5] [@media(max-width:800px)]:hidden">
         <ul class="flex items-center container justify-center">
           <li>
             <a
-              class="text-[14px] px-8 block py-4 bg-[#f5f5f5] font-semibold hover:bg-primary-color hover:text-white transition border-r-2"
+              class="text-[14px] px-8 [@media(max-width:1000px)]:px-6 block py-4 bg-[#f5f5f5] font-semibold hover:bg-primary-color hover:text-white transition border-r-2"
               href=""
               >Home</a
             >
           </li>
           <li>
             <a
-              class="text-[14px] px-8 block py-4 bg-[#f5f5f5] font-semibold hover:bg-primary-color hover:text-white transition border-r-2"
+              class="text-[14px] px-8 [@media(max-width:1000px)]:px-6 block py-4 bg-[#f5f5f5] font-semibold hover:bg-primary-color hover:text-white transition border-r-2"
               href=""
               >About us</a
             >
           </li>
           <li>
             <a
-              class="text-[14px] px-8 block py-4 bg-[#f5f5f5] font-semibold hover:bg-primary-color hover:text-white transition border-r-2"
+              class="text-[14px] px-8 [@media(max-width:1000px)]:px-6 block py-4 bg-[#f5f5f5] font-semibold hover:bg-primary-color hover:text-white transition border-r-2"
               href=""
               >Our Services</a
             >
           </li>
           <li>
             <a
-              class="text-[14px] px-8 block py-4 bg-[#f5f5f5] font-semibold hover:bg-primary-color hover:text-white transition border-r-2"
+              class="text-[14px] px-8 [@media(max-width:1000px)]:px-6 block py-4 bg-[#f5f5f5] font-semibold hover:bg-primary-color hover:text-white transition border-r-2"
               href=""
               >Our Facilities</a
             >
           </li>
           <li>
             <a
-              class="text-[14px] px-8 block py-4 bg-[#f5f5f5] font-semibold hover:bg-primary-color hover:text-white transition border-r-2"
+              class="text-[14px] px-8 [@media(max-width:1000px)]:px-6 block py-4 bg-[#f5f5f5] font-semibold hover:bg-primary-color hover:text-white transition border-r-2"
               href=""
               >How To Order</a
             >
           </li>
           <li>
             <a
-              class="text-[14px] px-8 block py-4 bg-[#f5f5f5] font-semibold hover:bg-primary-color hover:text-white transition border-r-2"
+              class="text-[14px] px-8 [@media(max-width:1000px)]:px-6 block py-4 bg-[#f5f5f5] font-semibold hover:bg-primary-color hover:text-white transition border-r-2"
               href=""
               >Blog</a
             >
@@ -118,22 +136,28 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       </div>
     </header>
     <div
-      class="relative after:opacity-70 max-h-[700px] overflow-hidden after:w-full after:h-full after:absolute after:top-0 after:left-0 bg-gradient"
+      class="relative after:opacity-70 max-h-[700px] overflow-hidden after:w-full after:h-full after:absolute after:top-0 after:left-0 bg-gradient [@media(max-width:800px)]:h-screen"
     >
       <img
         src="./assets/images/banner.webp"
         alt=""
-        class="w-full object-cover"
+        class="w-full object-cover [@media(max-width:800px)]:h-full"
       />
       <div
-        class="container absolute top-[40%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-10 max-w-[70%]"
+        class="container absolute top-[40%] left-[50%] -translate-x-[50%] -translate-y-[50%] z-10 max-w-[70%] [@media(max-width:1200px)]:max-w-[90%] [@media(max-width:800px)]:max-w-[100%] [@media(max-width:800px)]:top-[50%]"
       >
         <h1
-          class="text-white text-[40px] font-semibold text-center leading-8 mb-8"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          class="text-white text-[40px] font-semibold text-center mb-8 leading-tight [@media(max-width:1300px)]:mb-4 [@media(max-width:800px)]:text-[32px]"
         >
           Your Trusted Partner in Auto Spare Parts
         </h1>
-        <p class="text-white text-[16px] text-center w-[70%] mx-auto">
+        <p
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          class="text-white text-[16px] text-center w-[70%] mx-auto [@media(max-width:800px)]:w-[90%]"
+        >
           With more than 25 years of experience in the extremely competitive
           Global market, Alarkan Group has built a resilient and progressive
           reputation in front of the clients and suppliers in genuine automotive
@@ -147,63 +171,91 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       </div>
     </div>
     <div class="container mb-16">
-      <div class="-mt-16 flex z-10 shadow-md relative">
+      <div
+        class="-mt-16 flex z-10 [@media(max-width:900px)]:border [@media(min-width:900px)]:shadow-md relative [@media(max-width:900px)]:mt-10 [@media(max-width:900px)]:border-[#ccc6] [@media(max-width:900px)]:flex-wrap"
+      >
         <div
-          class="container w-[25%] border-l-2 bg-white px-[32px] py-[50px] flex justify-center items-center gap-5"
+          class="container w-[25%] [@media(max-width:900px)]:border [@media(max-width:900px)]:w-[50%] [@media(max-width:900px)]:text-center bg-white [@media(max-width:1200px)]:flex-col [@media(max-width:1200px)]:gap-2 px-[32px] py-[50px] [@media(max-width:1200px)]:py-[35px] flex justify-center items-center gap-5 hover:bg-[#f5f5f5] transition-all duration-500"
         >
           <div class="">
-            <i class="fa-solid fa-truck text-primary-color text-[40px]"></i>
+            <i
+              class="fa-solid fa-truck text-primary-color text-[40px] [@media(max-width:1000px)]:text-[32px]"
+            ></i>
           </div>
           <div>
-            <h2 class="text-[#212121] text-[20px] font-semibold mb-1">
+            <h2
+              class="text-[#212121] text-[20px] font-semibold mb-1 [@media(max-width:1200px)]:text-center"
+            >
               Free delivery
             </h2>
-            <p class="text-[#616161]">Worldwide from $27</p>
+            <p
+              class="text-[#616161] [@media(max-width:1200px)]:text-center [@media(max-width:1000px)]:text-[14px]"
+            >
+              Worldwide from $27
+            </p>
           </div>
         </div>
         <div
-          class="container w-[25%] border-l-2 bg-white p-[32px] flex justify-center items-center gap-5"
+          class="container w-[25%] [@media(max-width:900px)]:border [@media(max-width:900px)]:w-[50%] [@media(max-width:900px)]:text-center [@media(min-width:900px)]:border-l-2 bg-white [@media(max-width:1200px)]:flex-col [@media(max-width:1200px)]:gap-2 p-[32px] flex justify-center items-center gap-5 hover:bg-[#f5f5f5] transition-all"
         >
           <div class="">
             <i
-              class="fa-solid fa-shield-halved text-primary-color text-[40px]"
+              class="fa-solid fa-shield-halved text-primary-color text-[40px] [@media(max-width:1000px)]:text-[32px]"
             ></i>
           </div>
           <div>
-            <h2 class="text-[#212121] text-[20px] font-semibold mb-1">
+            <h2
+              class="text-[#212121] text-[20px] font-semibold mb-1 [@media(max-width:1200px)]:text-center"
+            >
               Warranty
             </h2>
-            <p class="text-[#616161]">Up to 2 years</p>
+            <p
+              class="text-[#616161] [@media(max-width:1200px)]:text-center [@media(max-width:1000px)]:text-[14px]"
+            >
+              Up to 2 years
+            </p>
           </div>
         </div>
         <div
-          class="container w-[25%] border-l-2 bg-white p-[32px] flex justify-center items-center gap-5"
+          class="container w-[25%] [@media(max-width:900px)]:border [@media(max-width:900px)]:w-[50%] [@media(max-width:900px)]:text-center [@media(min-width:900px)]:border-l-2 bg-white [@media(max-width:1200px)]:flex-col [@media(max-width:1200px)]:gap-2 p-[32px] flex justify-center items-center gap-5 hover:bg-[#f5f5f5] transition-all"
         >
           <div class="">
             <i
-              class="fa-solid fa-arrow-right-arrow-left text-primary-color text-[40px]"
+              class="fa-solid fa-arrow-right-arrow-left text-primary-color text-[40px] [@media(max-width:1000px)]:text-[32px]"
             ></i>
           </div>
           <div>
-            <h2 class="text-[#212121] text-[20px] font-semibold mb-1">
+            <h2
+              class="text-[#212121] text-[20px] font-semibold mb-1 [@media(max-width:1200px)]:text-center"
+            >
               Easy return
             </h2>
-            <p class="text-[#616161]">365 days return</p>
+            <p
+              class="text-[#616161] [@media(max-width:1200px)]:text-center [@media(max-width:1000px)]:text-[14px]"
+            >
+              365 days return
+            </p>
           </div>
         </div>
         <div
-          class="container w-[25%] border-l-2 bg-white p-[32px] flex justify-center items-center gap-5"
+          class="container w-[25%] [@media(max-width:900px)]:border [@media(max-width:900px)]:w-[50%] [@media(max-width:900px)]:text-center [@media(min-width:900px)]:border-l-2 bg-white [@media(max-width:1200px)]:flex-col [@media(max-width:1200px)]:gap-2 p-[32px] flex justify-center items-center gap-5 hover:bg-[#f5f5f5] transition-all"
         >
           <div class="">
             <i
-              class="fa-solid fa-code-branch text-primary-color text-[40px]"
+              class="fa-solid fa-code-branch text-primary-color text-[40px] [@media(max-width:1000px)]:text-[32px]"
             ></i>
           </div>
           <div>
-            <h2 class="text-[#212121] text-[20px] font-semibold mb-1">
+            <h2
+              class="text-[#212121] text-[20px] font-semibold mb-1 [@media(max-width:1200px)]:text-center"
+            >
               Wide choice
             </h2>
-            <p class="text-[#616161]">100k items available</p>
+            <p
+              class="text-[#616161] [@media(max-width:1200px)]:text-center [@media(max-width:1000px)]:text-[14px]"
+            >
+              100k items available
+            </p>
           </div>
         </div>
       </div>
@@ -215,80 +267,116 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       <p class="text-[#616161] text-[16px]">
         View a selection of our most popular car parts
       </p>
-      <div class="pt-6 flex justify-center items-center flex-wrap gap-4">
-        <div class="bg-[#f5f5f5] p-[32px] w-[24%] flex flex-col text-center">
+      <div class="pt-6 flex justify-between items-center flex-wrap gap-y-5">
+        <div
+          class="bg-[#f5f5f5] p-[32px] w-[24%] flex flex-col text-center [@media(max-width:800px)]:w-[49%] self-stretch group group"
+        >
           <img
             src="./assets/icons/service_kits.png"
-            class="mb-3 w-fit mx-auto"
+            class="mb-3 w-fit mx-auto group-hover:grayscale transition-all duration-500"
             alt=""
           />
-          <h2 class="text-[#212121] text-[20px] font-semibold mb-1">
+          <h2
+            class="text-[#212121] text-[20px] font-semibold mb-1 [@media(max-width:1200px)]:text-[16px]"
+          >
             Service Kits
           </h2>
         </div>
-        <div class="bg-[#f5f5f5] p-[32px] w-[24%] flex flex-col text-center">
+        <div
+          class="bg-[#f5f5f5] p-[32px] w-[24%] flex flex-col text-center [@media(max-width:800px)]:w-[49%] self-stretch group"
+        >
           <img
             src="./assets/icons/brakes.png"
-            class="mb-3 w-fit mx-auto"
+            class="mb-3 w-fit mx-auto group-hover:grayscale transition-all duration-500"
             alt=""
           />
-          <h2 class="text-[#212121] text-[20px] font-semibold mb-1">
+          <h2
+            class="text-[#212121] text-[20px] font-semibold mb-1 [@media(max-width:1200px)]:text-[16px]"
+          >
             Brake Discs & Pads
           </h2>
         </div>
-        <div class="bg-[#f5f5f5] p-[32px] w-[24%] flex flex-col text-center">
+        <div
+          class="bg-[#f5f5f5] p-[32px] w-[24%] flex flex-col text-center [@media(max-width:800px)]:w-[49%] self-stretch group"
+        >
           <img
             src="./assets/icons/suspension.png"
-            class="mb-3 w-fit mx-auto"
+            class="mb-3 w-fit mx-auto group-hover:grayscale transition-all duration-500"
             alt=""
           />
-          <h2 class="text-[#212121] text-[20px] font-semibold mb-1">
+          <h2
+            class="text-[#212121] text-[20px] font-semibold mb-1 [@media(max-width:1200px)]:text-[16px]"
+          >
             Suspension
           </h2>
         </div>
-        <div class="bg-[#f5f5f5] p-[32px] w-[24%] flex flex-col text-center">
+        <div
+          class="bg-[#f5f5f5] p-[32px] w-[24%] flex flex-col text-center [@media(max-width:800px)]:w-[49%] self-stretch group"
+        >
           <img
             src="./assets/icons/engine.png"
-            class="mb-3 w-fit mx-auto"
+            class="mb-3 w-fit mx-auto group-hover:grayscale transition-all duration-500"
             alt=""
           />
-          <h2 class="text-[#212121] text-[20px] font-semibold mb-1">
+          <h2
+            class="text-[#212121] text-[20px] font-semibold mb-1 [@media(max-width:1200px)]:text-[16px]"
+          >
             Engine Parts
           </h2>
         </div>
-        <div class="bg-[#f5f5f5] p-[32px] w-[24%] flex flex-col text-center">
-          <img src="./assets/icons/oil.png" class="mb-3 w-fit mx-auto" alt="" />
-          <h2 class="text-[#212121] text-[20px] font-semibold mb-1">
+        <div
+          class="bg-[#f5f5f5] p-[32px] w-[24%] flex flex-col text-center [@media(max-width:800px)]:w-[49%] self-stretch group"
+        >
+          <img
+            src="./assets/icons/oil.png"
+            class="mb-3 w-fit mx-auto group-hover:grayscale transition-all duration-500"
+            alt=""
+          />
+          <h2
+            class="text-[#212121] text-[20px] font-semibold mb-1 [@media(max-width:1200px)]:text-[16px]"
+          >
             Oil & lubricants
           </h2>
         </div>
-        <div class="bg-[#f5f5f5] p-[32px] w-[24%] flex flex-col text-center">
+        <div
+          class="bg-[#f5f5f5] p-[32px] w-[24%] flex flex-col text-center [@media(max-width:800px)]:w-[49%] self-stretch group"
+        >
           <img
             src="./assets/icons/tyre.png"
-            class="mb-3 w-fit mx-auto"
+            class="mb-3 w-fit mx-auto group-hover:grayscale transition-all duration-500"
             alt=""
           />
-          <h2 class="text-[#212121] text-[20px] font-semibold mb-1">
+          <h2
+            class="text-[#212121] text-[20px] font-semibold mb-1 [@media(max-width:1200px)]:text-[16px]"
+          >
             Tires & Wheels
           </h2>
         </div>
-        <div class="bg-[#f5f5f5] p-[32px] w-[24%] flex flex-col text-center">
+        <div
+          class="bg-[#f5f5f5] p-[32px] w-[24%] flex flex-col text-center [@media(max-width:800px)]:w-[49%] self-stretch group"
+        >
           <img
             src="./assets/icons/steering.png"
-            class="mb-3 w-fit mx-auto"
+            class="mb-3 w-fit mx-auto group-hover:grayscale transition-all duration-500"
             alt=""
           />
-          <h2 class="text-[#212121] text-[20px] font-semibold mb-1">
+          <h2
+            class="text-[#212121] text-[20px] font-semibold mb-1 [@media(max-width:1200px)]:text-[16px]"
+          >
             Steering
           </h2>
         </div>
-        <div class="bg-[#f5f5f5] p-[32px] w-[24%] flex flex-col text-center">
+        <div
+          class="bg-[#f5f5f5] p-[32px] w-[24%] flex flex-col text-center [@media(max-width:800px)]:w-[49%] self-stretch group"
+        >
           <img
             src="./assets/icons/batteries.png"
-            class="mb-3 w-fit mx-auto"
+            class="mb-3 w-fit mx-auto group-hover:grayscale transition-all duration-500"
             alt=""
           />
-          <h2 class="text-[#212121] text-[20px] font-semibold mb-1">
+          <h2
+            class="text-[#212121] text-[20px] font-semibold mb-1 [@media(max-width:1200px)]:text-[16px]"
+          >
             Batteries
           </h2>
         </div>
@@ -301,40 +389,73 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       <p class="text-[#616161] text-[16px]">
         View a selection of our most popular makes
       </p>
-      <section
-        class="splide pt-10 pb-16"
-        aria-label="Splide Basic HTML Example"
-      >
+      <section class="splide pb-16" aria-label="Splide Basic HTML Example">
         <div class="splide__track">
           <ul class="splide__list">
-            <li class="splide__slide flex justify-center items-end">
-              <img src="./assets/logo/1.png" class="w-[150px]" alt="" />
+            <li class="pt-10 splide__slide flex justify-center items-end">
+              <img
+                src="./assets/logo/1.png"
+                class="w-[150px] hover:-translate-y-3 transition-all duration-500"
+                alt=""
+              />
             </li>
 
-            <li class="splide__slide flex justify-center items-end">
-              <img src="./assets/logo/3.jpeg" class="w-[150px]" alt="" />
+            <li class="pt-10 splide__slide flex justify-center items-end">
+              <img
+                src="./assets/logo/3.jpeg"
+                class="w-[150px] hover:-translate-y-3 transition-all duration-500"
+                alt=""
+              />
             </li>
 
-            <li class="splide__slide flex justify-center items-end">
-              <img src="./assets/logo/4.png" class="w-[150px]" alt="" />
+            <li class="pt-10 splide__slide flex justify-center items-end">
+              <img
+                src="./assets/logo/4.png"
+                class="w-[150px] hover:-translate-y-3 transition-all duration-500"
+                alt=""
+              />
             </li>
-            <li class="splide__slide flex justify-center items-end">
-              <img src="./assets/logo/5.jpeg" class="w-[100px]" alt="" />
+            <li class="pt-10 splide__slide flex justify-center items-end">
+              <img
+                src="./assets/logo/5.jpeg"
+                class="w-[80px] hover:-translate-y-3 transition-all duration-500"
+                alt=""
+              />
             </li>
-            <li class="splide__slide flex justify-center items-end">
-              <img src="./assets/logo/2.png" class="w-[100px]" alt="" />
+            <li class="pt-10 splide__slide flex justify-center items-end">
+              <img
+                src="./assets/logo/2.png"
+                class="w-[80px] hover:-translate-y-3 transition-all duration-500"
+                alt=""
+              />
             </li>
-            <li class="splide__slide flex justify-center items-end">
-              <img src="./assets/logo/6.png" class="w-[100px]" alt="" />
+            <li class="pt-10 splide__slide flex justify-center items-end">
+              <img
+                src="./assets/logo/6.png"
+                class="w-[80px] hover:-translate-y-3 transition-all duration-500"
+                alt=""
+              />
             </li>
-            <li class="splide__slide flex justify-center items-end">
-              <img src="./assets/logo/7.jpg" class="w-[100px]" alt="" />
+            <li class="pt-10 splide__slide flex justify-center items-end">
+              <img
+                src="./assets/logo/7.jpg"
+                class="w-[80px] hover:-translate-y-3 transition-all duration-500"
+                alt=""
+              />
             </li>
-            <li class="splide__slide flex justify-center items-end">
-              <img src="./assets/logo/8.png" class="w-[100px]" alt="" />
+            <li class="pt-10 splide__slide flex justify-center items-end">
+              <img
+                src="./assets/logo/8.png"
+                class="w-[80px] hover:-translate-y-3 transition-all duration-500"
+                alt=""
+              />
             </li>
-            <li class="splide__slide flex justify-center items-end">
-              <img src="./assets/logo/9.jpeg" class="w-[100px]" alt="" />
+            <li class="pt-10 splide__slide flex justify-center items-end">
+              <img
+                src="./assets/logo/9.jpeg"
+                class="w-[80px] hover:-translate-y-3 transition-all duration-500"
+                alt=""
+              />
             </li>
           </ul>
         </div>
@@ -413,8 +534,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       </div> -->
     </div>
     <div class="container pt-6 flex gap-10 justify-between items-center">
-      <div class="w-[23%]"></div>
-      <div class="w-[77%] flex gap-3 items-center justify-between">
+      <div class="w-[23%] min-w-[250px] [@media(max-width:800px)]:hidden"></div>
+      <div
+        class="w-[77%] flex gap-3 items-center justify-between [@media(max-width:800px)]:w-full"
+      >
         <div class="flex gap-3 items-center">
           <button
             class="bg-primary-color text-white font-semibold text-[14px] uppercase py-[12px] px-6 rounded-tr-sm rounded-br-sm"
@@ -432,23 +555,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             new arrivals
           </button>
         </div>
-        <div class="flex gap-1">
-          <a
-            class="bg-[#f0f0f0] font-semibold text-[14px] uppercase py-[12px] px-4 rounded-tr-sm rounded-br-sm"
-          >
-            <i class="fa-solid fa-chevron-left"></i>
-          </a>
-          <a
-            class="bg-[#f0f0f0] font-semibold text-[14px] uppercase py-[12px] px-4 rounded-tr-sm rounded-br-sm"
-          >
-            <i class="fa-solid fa-chevron-right"></i>
-          </a>
-        </div>
       </div>
     </div>
     <div class="container pt-6 gap-6 flex justify-between items-start">
       <div
-        class="w-[23%] bg-primary-color py-14 pb-8 px-10 overflow-hidden relative self-stretch"
+        class="w-[23%] bg-primary-color py-14 pb-8 px-10 overflow-hidden relative self-stretch min-w-[250px] [@media(max-width:800px)]:hidden group"
       >
         <p class="text-white">We’ve got you covered</p>
         <h5 class="text-white text-[40px] leading-none font-medium">GEAR</h5>
@@ -456,80 +567,120 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
         <img
           src="./assets/images/banner_img_1.png"
-          class="py-10 w-[150%] max-w-[150%] relative -left-8"
+          class="py-10 w-[150%] max-w-[150%] relative -left-8 group-hover:scale-[1.1] transition-all duration-700"
           alt=""
         />
         <button
-          class="bg-secondary-color font-semibold text-[14px] uppercase py-[12px] px-6 rounded-tr-sm rounded-br-sm"
+          class="bg-secondary-color font-semibold text-[14px] py-[12px] px-6 rounded-tr-sm rounded-br-sm text-[14px] uppercase py-[12px] [@media(max-width:1200px)]:text-[14px] whitespace-nowrap text-[14px] py-[12px] relative z-10"
         >
           Shop now
         </button>
       </div>
-      <div class="w-[77%] self-stretch">
-        <div class="flex justify-between h-full self-stretch">
-          <div class="border border-[#ccc6] py-5 px-5 w-[33%] self-stretch">
-            <div class="border-b border-[#ccc6]">
-              <img src="./assets/images/product_1.jpg" alt="" />
-            </div>
-            <div class="mt-5">
-              <a href="" class="font-semibold"
-                >20x25x1 Pleated MERV 14 AC Furnace Air Filters Qty 6</a
-              >
-              <p class="font-semibold text-primary-color text-[18px] mt-1">
-                $11.14
-              </p>
-              <button
-                class="mt-5 bg-secondary-color font-semibold text-[13px] uppercase py-[10px] w-full rounded-tr-sm rounded-br-sm"
-              >
-                add to cart
-              </button>
-            </div>
-          </div>
-          <div class="border border-[#ccc6] py-5 px-5 w-[33%] self-stretch">
-            <div class="border-b border-[#ccc6]">
-              <img src="./assets/images/product_2.jpg" alt="" />
-            </div>
-            <div class="mt-5">
-              <a href="" class="font-semibold"
-                >20x25x1 Pleated MERV 14 AC Furnace Air Filters Qty 6</a
-              >
-              <p class="font-semibold text-primary-color text-[18px] mt-1">
-                $11.14
-              </p>
-              <button
-                class="mt-5 bg-secondary-color font-semibold text-[13px] uppercase py-[10px] w-full rounded-tr-sm rounded-br-sm"
-              >
-                add to cart
-              </button>
-            </div>
-          </div>
-          <div class="border border-[#ccc6] py-5 px-5 w-[33%] self-stretch">
-            <div class="border-b border-[#ccc6]">
-              <img src="./assets/images/product_3.jpg" alt="" />
-            </div>
-            <div class="mt-5">
-              <a href="" class="font-semibold"
-                >20x25x1 Pleated MERV 14 AC Furnace Air Filters Qty 6</a
-              >
-              <p class="font-semibold text-primary-color text-[18px] mt-1">
-                $11.14
-              </p>
-              <button
-                class="mt-5 bg-secondary-color font-semibold text-[13px] uppercase py-[10px] w-full rounded-tr-sm rounded-br-sm"
-              >
-                add to cart
-              </button>
-            </div>
-          </div>
+
+      <section
+        class="splide product_slider w-[77%] [@media(max-width:800px)]:w-full"
+        aria-label="Splide Basic HTML Example relative"
+      >
+        <div
+          class="flex !gap-1 splide__arrows absolute -top-12 w-[120px] justify-end right-0"
+        >
+          <a
+            class="bg-[#f0f0f0] font-semibold text-[14px] uppercase !w-[40px] h-[40px] rounded-tr-sm rounded-br-sm splide__arrow splide__arrow--prev rounded-none flex justify-center items-center"
+          >
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
+          <a
+            class="bg-[#f0f0f0] font-semibold text-[14px] uppercase !w-[40px] h-[40px] rounded-tr-sm rounded-br-sm splide__arrow splide__arrow--next rounded-none flex justify-center items-center"
+          >
+            <i class="fa-solid fa-chevron-right"></i>
+          </a>
         </div>
-      </div>
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="border border-[#ccc6] py-5 px-5 self-stretch group">
+                <div class="border-b border-[#ccc6]">
+                  <img
+                    src="./assets/images/product_1.jpg"
+                    class="group-hover:scale-[1.05] transition-all duration-700"
+                    alt=""
+                  />
+                </div>
+                <div class="mt-5">
+                  <a href="" class="font-semibold"
+                    >20x25x1 Pleated MERV 14 AC Furnace Air Filters Qty 6</a
+                  >
+                  <p class="font-semibold text-primary-color text-[18px] mt-1">
+                    $11.14
+                  </p>
+                  <button
+                    class="mt-5 bg-secondary-color text-[13px] py-[10px] w-full font-semibold text-[14px] py-[12px] px-6 rounded-tr-sm text-[14px] uppercase py-[12px] [@media(max-width:1200px)]:text-[12px] whitespace-nowrap text-[14px] py-[12px] relative z-10"
+                  >
+                    add to cart
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="border border-[#ccc6] py-5 px-5 self-stretch group">
+                <div class="border-b border-[#ccc6]">
+                  <img
+                    src="./assets/images/product_2.jpg"
+                    class="group-hover:scale-[1.05] transition-all duration-700"
+                    alt=""
+                  />
+                </div>
+                <div class="mt-5">
+                  <a href="" class="font-semibold"
+                    >20x25x1 Pleated MERV 14 AC Furnace Air Filters Qty 6</a
+                  >
+                  <p class="font-semibold text-primary-color text-[18px] mt-1">
+                    $11.14
+                  </p>
+                  <button
+                    class="mt-5 bg-secondary-color text-[13px] py-[10px] w-full font-semibold text-[14px] py-[12px] px-6 rounded-tr-sm text-[14px] uppercase py-[12px] [@media(max-width:1200px)]:text-[12px] whitespace-nowrap text-[14px] py-[12px] relative z-10"
+                  >
+                    add to cart
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="border border-[#ccc6] py-5 px-5 self-stretch group">
+                <div class="border-b border-[#ccc6]">
+                  <img
+                    src="./assets/images/product_3.jpg"
+                    class="group-hover:scale-[1.05] transition-all duration-700"
+                    alt=""
+                  />
+                </div>
+                <div class="mt-5">
+                  <a href="" class="font-semibold"
+                    >20x25x1 Pleated MERV 14 AC Furnace Air Filters Qty 6</a
+                  >
+                  <p class="font-semibold text-primary-color text-[18px] mt-1">
+                    $11.14
+                  </p>
+                  <button
+                    class="mt-5 bg-secondary-color text-[13px] py-[10px] w-full font-semibold text-[14px] py-[12px] px-6 rounded-tr-sm text-[14px] uppercase py-[12px] [@media(max-width:1200px)]:text-[12px] whitespace-nowrap text-[14px] py-[12px] relative z-10"
+                  >
+                    add to cart
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </div>
     <div class="container pt-6 gap-6 flex justify-between items-start">
-      <div class="w-[23%] overflow-hidden relative self-stretch">
+      <div
+        class="w-[23%] overflow-hidden relative self-stretch min-w-[250px] [@media(max-width:800px)]:hidden group"
+      >
         <img
           src="./assets/images/banner_back_2.jpg"
           alt=""
-          class="absolute top-0 left-0 w-full z-[-1]"
+          class="absolute top-0 left-0 w-full z-[-1] group-hover:scale-[1.05] transition-all duration-700"
         />
         <div class="relative z-50 py-14 pb-8 px-10">
           <p class="text-white">Save 25%</p>
@@ -538,98 +689,123 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
           <img
             src="./assets/images/banner_img_2.png"
-            class="-mb-10 w-[220%] max-w-[220%] relative -left-8"
+            class="-mb-10 w-[220%] max-w-[220%] relative -left-8 group-hover:-left-12 transition-all duration-700"
             alt=""
           />
           <button
-            class="bg-secondary-color font-semibold text-[14px] uppercase py-[12px] px-6 rounded-tr-sm rounded-br-sm relative z-10"
+            class="bg-secondary-color font-semibold text-[14px] py-[12px] px-6 rounded-tr-sm rounded-br-sm text-[14px] uppercase py-[12px] [@media(max-width:1200px)]:text-[14px] whitespace-nowrap text-[14px] py-[12px] relative z-10"
           >
             Shop now
           </button>
         </div>
       </div>
-      <div class="w-[77%] self-stretch">
-        <div class="flex justify-between h-full self-stretch">
-          <div class="border border-[#ccc6] py-5 px-5 w-[33%] self-stretch">
-            <div class="border-b border-[#ccc6]">
-              <img src="./assets/images/product_4.jpg" alt="" />
-            </div>
-            <div class="mt-5">
-              <a href="" class="font-semibold"
-                >20x25x1 Pleated MERV 14 AC Furnace Air Filters Qty 6</a
-              >
-              <p class="font-semibold text-primary-color text-[18px] mt-1">
-                $11.14
-              </p>
-              <button
-                class="mt-5 bg-secondary-color font-semibold text-[13px] uppercase py-[10px] w-full rounded-tr-sm rounded-br-sm"
-              >
-                add to cart
-              </button>
-            </div>
-          </div>
-          <div class="border border-[#ccc6] py-5 px-5 w-[33%] self-stretch">
-            <div class="border-b border-[#ccc6]">
-              <img src="./assets/images/product_5.jpg" alt="" />
-            </div>
-            <div class="mt-5">
-              <a href="" class="font-semibold"
-                >20x25x1 Pleated MERV 14 AC Furnace Air Filters Qty 6</a
-              >
-              <p class="font-semibold text-primary-color text-[18px] mt-1">
-                $11.14
-              </p>
-              <button
-                class="mt-5 bg-secondary-color font-semibold text-[13px] uppercase py-[10px] w-full rounded-tr-sm rounded-br-sm"
-              >
-                add to cart
-              </button>
-            </div>
-          </div>
-          <div class="border border-[#ccc6] py-5 px-5 w-[33%] self-stretch">
-            <div class="border-b border-[#ccc6]">
-              <img src="./assets/images/product_6.jpg" alt="" />
-            </div>
-            <div class="mt-5">
-              <a href="" class="font-semibold"
-                >20x25x1 Pleated MERV 14 AC Furnace Air Filters Qty 6</a
-              >
-              <p class="font-semibold text-primary-color text-[18px] mt-1">
-                $11.14
-              </p>
-              <button
-                class="mt-5 bg-secondary-color font-semibold text-[13px] uppercase py-[10px] w-full rounded-tr-sm rounded-br-sm"
-              >
-                add to cart
-              </button>
-            </div>
-          </div>
+      <section
+        class="splide product_slider_2 w-[77%] [@media(max-width:800px)]:w-full"
+        aria-label="Splide Basic HTML Example relative"
+      >
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="border border-[#ccc6] py-5 px-5 self-stretch group">
+                <div class="border-b border-[#ccc6]">
+                  <img
+                    src="./assets/images/product_4.jpg"
+                    class="group-hover:scale-[1.05] transition-all duration-700"
+                    alt=""
+                  />
+                </div>
+                <div class="mt-5">
+                  <a href="" class="font-semibold"
+                    >20x25x1 Pleated MERV 14 AC Furnace Air Filters Qty 6</a
+                  >
+                  <p class="font-semibold text-primary-color text-[18px] mt-1">
+                    $11.14
+                  </p>
+                  <button
+                    class="mt-5 bg-secondary-color text-[13px] py-[10px] w-full font-semibold text-[14px] py-[12px] px-6 rounded-tr-sm text-[14px] uppercase py-[12px] [@media(max-width:1200px)]:text-[12px] whitespace-nowrap text-[14px] py-[12px] relative z-10"
+                  >
+                    add to cart
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="border border-[#ccc6] py-5 px-5 self-stretch group">
+                <div class="border-b border-[#ccc6]">
+                  <img
+                    src="./assets/images/product_5.jpg"
+                    class="group-hover:scale-[1.05] transition-all duration-700"
+                    alt=""
+                  />
+                </div>
+                <div class="mt-5">
+                  <a href="" class="font-semibold"
+                    >20x25x1 Pleated MERV 14 AC Furnace Air Filters Qty 6</a
+                  >
+                  <p class="font-semibold text-primary-color text-[18px] mt-1">
+                    $11.14
+                  </p>
+                  <button
+                    class="mt-5 bg-secondary-color text-[13px] py-[10px] w-full font-semibold text-[14px] py-[12px] px-6 rounded-tr-sm text-[14px] uppercase py-[12px] [@media(max-width:1200px)]:text-[12px] whitespace-nowrap text-[14px] py-[12px] relative z-10"
+                  >
+                    add to cart
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="border border-[#ccc6] py-5 px-5 self-stretch group">
+                <div class="border-b border-[#ccc6]">
+                  <img
+                    src="./assets/images/product_6.jpg"
+                    class="group-hover:scale-[1.05] transition-all duration-700"
+                    alt=""
+                  />
+                </div>
+                <div class="mt-5">
+                  <a href="" class="font-semibold"
+                    >20x25x1 Pleated MERV 14 AC Furnace Air Filters Qty 6</a
+                  >
+                  <p class="font-semibold text-primary-color text-[18px] mt-1">
+                    $11.14
+                  </p>
+                  <button
+                    class="mt-5 bg-secondary-color text-[13px] py-[10px] w-full font-semibold text-[14px] py-[12px] px-6 rounded-tr-sm text-[14px] uppercase py-[12px] [@media(max-width:1200px)]:text-[12px] whitespace-nowrap text-[14px] py-[12px] relative z-10"
+                  >
+                    add to cart
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
-      </div>
+      </section>
     </div>
-    <div class="container my-5 relative">
+    <div class="container my-5 relative group overflow-hidden">
       <div
-        class="relative after:absolute after:top-0 after:left-0 after:w-full after:h-full callout-bg after:z-10"
+        class="relative after:absolute after:top-0 after:left-0 after:w-full after:h-full callout-bg after:z-10 overflow-hidden"
       >
         <img
           src="./assets/images/banner_back_11.jpg"
-          class="w-full object-cover"
+          class="w-full object-cover absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-full group-hover:scale-[1.05] transition-all duration-700"
           alt=""
         />
         <div
-          class="flex z-20 px-16 justify-between absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full items-center"
+          class="flex w-full relative px-16 [@media(max-width:800px)]:px-8 justify-between items-center [@media(max-width:600px)]:flex-col py-10 z-30 [@media(max-width:600px)]:text-center [@media(max-width:600px)]:gap-4"
         >
           <div>
             <h3 class="text-white font-medium text-[16px]">
               Starting at <span class="text-primary-color">$79.00</span>
             </h3>
             <h5 class="text-white uppercase text-[18px]">shop and save big</h5>
-            <h6 class="text-white text-[40px] uppercase font-medium">
+            <h6
+              class="text-white text-[40px] uppercase font-medium [@media(max-width:1200px)]:text-[30px]"
+            >
               most essentials
             </h6>
           </div>
           <button
-            class="bg-secondary-color font-semibold text-[14px] uppercase px-8 py-3 rounded-tr-sm rounded-br-sm"
+            class="bg-secondary-color font-semibold text-[14px] uppercase px-8 py-3 rounded-tr-sm rounded-br-sm [@media(max-width:1200px)]:text-[13px] [@media(max-width:1200px)]:px-5 [@media(max-width:1200px)]:py-2"
           >
             Shop Now
           </button>
@@ -637,18 +813,22 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       </div>
     </div>
     <footer class="bg-[#212121] mt-10">
-      <div class="container py-10 flex justify-between items-start">
-        <div class="w-[30%]">
+      <div
+        class="container py-10 flex justify-between items-start [@media(max-width:600px)]:flex-col [@media(max-width:600px)]:gap-10"
+      >
+        <div
+          class="w-[30%] [@media(max-width:600px)]:!w-full [@media(max-width:800px)]:w-[49%]"
+        >
           <div class="logo max-w-[200px] mb-6">
             <img src="./assets//images/transparent-logo.png" alt="" />
           </div>
-          <p class="text-white">
+          <p class="text-white [@media(max-width:1200px)]:text-[14px]">
             We work on market over 20 years. We sale only original auto parts
             and gained confidence of 320k + clients. Buy from MobiMax, join our
             big community.
           </p>
         </div>
-        <div class="w-[20%]">
+        <div class="w-[20%] [@media(max-width:800px)]:hidden">
           <h3
             class="text-white relative font-semibold text-[15px] uppercase pb-3 border-b border-[#ccc6] after:absolute after:left-0 after:bottom-[-1px] after:w-16 after:h-[1px] after:bg-primary-color mb-10"
           >
@@ -658,48 +838,48 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             <li>
               <a
                 href=""
-                class="text-[#bdbdbd] mb-2 block transition-all hover:text-white"
+                class="text-[#bdbdbd] mb-2 block transition-all [@media(max-width:1200px)]:text-[14px] hover:text-white"
                 >Contact us</a
               >
             </li>
             <li>
               <a
                 href=""
-                class="text-[#bdbdbd] mb-2 block transition-all hover:text-white"
+                class="text-[#bdbdbd] mb-2 block transition-all [@media(max-width:1200px)]:text-[14px] hover:text-white"
                 >FAQs</a
               >
             </li>
             <li>
               <a
                 href=""
-                class="text-[#bdbdbd] mb-2 block transition-all hover:text-white"
+                class="text-[#bdbdbd] mb-2 block transition-all [@media(max-width:1200px)]:text-[14px] hover:text-white"
                 >Store Locator
               </a>
             </li>
             <li>
               <a
                 href=""
-                class="text-[#bdbdbd] mb-2 block transition-all hover:text-white"
+                class="text-[#bdbdbd] mb-2 block transition-all [@media(max-width:1200px)]:text-[14px] hover:text-white"
                 >Delivery Information
               </a>
             </li>
             <li>
               <a
                 href=""
-                class="text-[#bdbdbd] mb-2 block transition-all hover:text-white"
+                class="text-[#bdbdbd] mb-2 block transition-all [@media(max-width:1200px)]:text-[14px] hover:text-white"
                 >Returns & Refunds</a
               >
             </li>
             <li>
               <a
                 href=""
-                class="text-[#bdbdbd] mb-2 block transition-all hover:text-white"
+                class="text-[#bdbdbd] mb-2 block transition-all [@media(max-width:1200px)]:text-[14px] hover:text-white"
                 >Product Recall</a
               >
             </li>
           </ul>
         </div>
-        <div class="w-[20%]">
+        <div class="w-[20%] [@media(max-width:800px)]:hidden">
           <h3
             class="text-white relative font-semibold text-[15px] uppercase pb-3 border-b border-[#ccc6] after:absolute after:left-0 after:bottom-[-1px] after:w-16 after:h-[1px] after:bg-primary-color mb-10"
           >
@@ -709,50 +889,52 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             <li>
               <a
                 href=""
-                class="text-[#bdbdbd] mb-2 block transition-all hover:text-white"
+                class="text-[#bdbdbd] mb-2 block transition-all [@media(max-width:1200px)]:text-[14px] hover:text-white"
                 >Site map</a
               >
             </li>
             <li>
               <a
                 href=""
-                class="text-[#bdbdbd] mb-2 block transition-all hover:text-white"
+                class="text-[#bdbdbd] mb-2 block transition-all [@media(max-width:1200px)]:text-[14px] hover:text-white"
                 >Careers</a
               >
             </li>
             <li>
               <a
                 href=""
-                class="text-[#bdbdbd] mb-2 block transition-all hover:text-white"
+                class="text-[#bdbdbd] mb-2 block transition-all [@media(max-width:1200px)]:text-[14px] hover:text-white"
                 >Affiliate
               </a>
             </li>
             <li>
               <a
                 href=""
-                class="text-[#bdbdbd] mb-2 block transition-all hover:text-white"
+                class="text-[#bdbdbd] mb-2 block transition-all [@media(max-width:1200px)]:text-[14px] hover:text-white"
                 >News
               </a>
             </li>
             <li>
               <a
                 href=""
-                class="text-[#bdbdbd] mb-2 block transition-all hover:text-white"
+                class="text-[#bdbdbd] mb-2 block transition-all [@media(max-width:1200px)]:text-[14px] hover:text-white"
                 >Partners</a
               >
             </li>
             <li>
               <a
                 href=""
-                class="text-[#bdbdbd] mb-2 block transition-all hover:text-white"
+                class="text-[#bdbdbd] mb-2 block transition-all [@media(max-width:1200px)]:text-[14px] hover:text-white"
                 >Blog</a
               >
             </li>
           </ul>
         </div>
-        <div class="w-[20%]">
+        <div
+          class="w-[20%] [@media(max-width:600px)]:!w-full [@media(max-width:800px)]:w-[49%]"
+        >
           <h3
-            class="text-white relative font-semibold text-[15px] uppercase pb-3 border-b border-[#ccc6] after:absolute after:left-0 after:bottom-[-1px] after:w-16 after:h-[1px] after:bg-primary-color mb-10"
+            class="text-white relative font-semibold text-[15px] uppercase pb-3 border-b border-[#ccc6] after:absolute after:left-0 after:bottom-[-1px] after:w-16 after:h-[1px] after:bg-primary-color mb-10 [@media(max-width:600px)]:mb-5"
           >
             Contacts
           </h3>
@@ -761,17 +943,25 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               <i
                 class="fa-solid text-[24px] fa-location-dot text-primary-color"
               ></i>
-              <p class="text-white text-[16px] font-medium">
+              <p
+                class="text-white text-[16px] font-medium [@media(max-width:1200px)]:text-[14px]"
+              >
                 48 Walwyn Rd, Chapelton
               </p>
             </div>
             <div class="flex gap-4 mb-5">
               <i class="fa-solid text-[24px] fa-phone text-primary-color"></i>
-              <p class="text-white text-[16px] font-medium">070 5159 1537</p>
+              <p
+                class="text-white text-[16px] font-medium [@media(max-width:1200px)]:text-[14px]"
+              >
+                070 5159 1537
+              </p>
             </div>
             <div class="flex gap-4 mb-5">
               <i class="fa-regular text-[24px] fa-clock text-primary-color"></i>
-              <p class="text-white text-[16px] font-medium">
+              <p
+                class="text-white text-[16px] font-medium [@media(max-width:1200px)]:text-[14px]"
+              >
                 Mon. - Sat. 10:00 am - 20:00 pm
               </p>
             </div>
@@ -812,7 +1002,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           </div>
         </div>
       </div>
-      <div class="bg-black py-8">
+      <div class="bg-black py-8 [@media(max-width:1200px)]:text-[14px]">
         <p class="text-[#bdbdbd] container text-center">
           Euro Tech.com ©2000- 2025 | Euro Tech, Inc. All Rights Reserved.
         </p>
@@ -828,19 +1018,69 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
   <script src="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 "></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
+      AOS.init();
       var splide = new Splide(".splide", {
         type: "loop",
         perPage: 8,
+        autoplay: true,
+        interval: 5000,
+        perMove: 1,
+        arrows: false,
+        speed: 4000,
+        pagination: false,
+        direction: "ltr",
+        breakpoints: {
+          900: {
+            perPage: 6,
+          },
+          600: {
+            perPage: 4,
+          },
+        },
+      });
+      splide.mount();
+      var productSlider = new Splide(".product_slider", {
+        type: "loop",
+        perPage: 3,
+        gap: 10,
+        interval: 2000,
+        perMove: 1,
+        // arrows: false,
+        speed: 2000,
+        pagination: false,
+        breakpoints: {
+          1000: {
+            perPage: 2,
+          },
+        },
+      });
+
+      productSlider.mount();
+      var productSlider2 = new Splide(".product_slider_2", {
+        type: "loop",
+        perPage: 3,
+        gap: 10,
         autoplay: true,
         interval: 2000,
         perMove: 1,
         arrows: false,
         speed: 2000,
         pagination: false,
+        breakpoints: {
+          1000: {
+            perPage: 2,
+          },
+        },
       });
-      splide.mount();
+      productSlider2.mount();
     });
   </script>
 </html>
