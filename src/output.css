@@ -568,6 +568,10 @@ video {
   }
 }
 
+.visible {
+  visibility: visible;
+}
+
 .fixed {
   position: fixed;
 }
@@ -712,6 +716,10 @@ video {
 
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-10 {
@@ -1414,6 +1422,12 @@ body {
   }
 }
 
+@media(max-width:100px) {
+  .\[\@media\(max-width\:100px\)\]\:text-\[30px\] {
+    font-size: 30px;
+  }
+}
+
 @media(max-width:1200px) {
   .\[\@media\(max-width\:1200px\)\]\:max-w-\[400px\] {
     max-width: 400px;
@@ -1482,6 +1496,10 @@ body {
     margin-bottom: 1.25rem;
   }
 
+  .\[\@media\(max-width\:600px\)\]\:flex {
+    display: flex;
+  }
+
   .\[\@media\(max-width\:600px\)\]\:hidden {
     display: none;
   }
@@ -1494,12 +1512,24 @@ body {
     width: 100%;
   }
 
+  .\[\@media\(max-width\:600px\)\]\:w-\[50\%\] {
+    width: 50%;
+  }
+
+  .\[\@media\(max-width\:600px\)\]\:\!w-\[100\%\] {
+    width: 100% !important;
+  }
+
   .\[\@media\(max-width\:600px\)\]\:max-w-\[150px\] {
     max-width: 150px;
   }
 
   .\[\@media\(max-width\:600px\)\]\:flex-col {
     flex-direction: column;
+  }
+
+  .\[\@media\(max-width\:600px\)\]\:flex-wrap {
+    flex-wrap: wrap;
   }
 
   .\[\@media\(max-width\:600px\)\]\:gap-10 {
@@ -1510,8 +1540,51 @@ body {
     gap: 1rem;
   }
 
+  .\[\@media\(max-width\:600px\)\]\:px-\[\] {
+    padding-left: ;
+    padding-right: ;
+  }
+
+  .\[\@media\(max-width\:600px\)\]\:px-\[20p\] {
+    padding-left: 20p;
+    padding-right: 20p;
+  }
+
+  .\[\@media\(max-width\:600px\)\]\:px-\[20px\] {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .\[\@media\(max-width\:600px\)\]\:py-\[20px\] {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .\[\@media\(max-width\:600px\)\]\:py-\[0px\] {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .\[\@media\(max-width\:600px\)\]\:px-\[0px\] {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .\[\@media\(max-width\:600px\)\]\:px-\[10px\] {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .\[\@media\(max-width\:600px\)\]\:text-center {
     text-align: center;
+  }
+
+  .\[\@media\(max-width\:600px\)\]\:\!text-\[24px\] {
+    font-size: 24px !important;
+  }
+
+  .\[\@media\(max-width\:600px\)\]\:text-\[12px\] {
+    font-size: 12px;
   }
 
   .\[\@media\(max-width\:600px\)\]\:text-\[13px\] {
@@ -1522,12 +1595,40 @@ body {
     font-size: 16px;
   }
 
+  .\[\@media\(max-width\:600px\)\]\:text-\[20px\] {
+    font-size: 20px;
+  }
+
+  .\[\@media\(max-width\:600px\)\]\:text-\[214px\] {
+    font-size: 214px;
+  }
+
+  .\[\@media\(max-width\:600px\)\]\:text-\[1px\] {
+    font-size: 1px;
+  }
+
+  .\[\@media\(max-width\:600px\)\]\:text-\[14px\] {
+    font-size: 14px;
+  }
+
+  .\[\@media\(max-width\:600px\)\]\:text-\[30px\] {
+    font-size: 30px;
+  }
+
   .\[\@media\(max-width\:600px\)\]\:text-\[24px\] {
     font-size: 24px;
   }
 
-  .\[\@media\(max-width\:600px\)\]\:\!text-\[24px\] {
-    font-size: 24px !important;
+  .\[\@media\(max-width\:600px\)\]\:text-\[1\] {
+    color: 1;
+  }
+
+  .\[\@media\(max-width\:600px\)\]\:text-\[20\] {
+    color: 20;
+  }
+
+  .\[\@media\(max-width\:600px\)\]\:text-\[px\] {
+    color: px;
   }
 }
 
