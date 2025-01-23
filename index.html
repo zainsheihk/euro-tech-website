@@ -85,6 +85,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           </button>
           <i
             class="fa-solid fa-bars [@media(min-width:800px)]:hidden text-[24px] text-[#212121]"
+            onclick="toggleMenu()"
           ></i>
         </div>
       </div>
@@ -134,6 +135,65 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           </li>
         </ul>
       </div>
+
+      <div
+        id="menu"
+        class="[@media(min-width:800px)]:hidden fixed top-0 left-[100%] w-full h-screen z-50 transition-all duration-700"
+      >
+        <button
+          class="absolute top-5 right-10 w-7 h-7 rounded-full border"
+          id="closeMenu"
+          onclick="toggleMenu()"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <ul
+          class="w-full h-full bg-[#f5f5f5] flex flex-col justify-center items-center"
+        >
+          <li class="w-[80%] text-center">
+            <a
+              class="text-[14px] px-8 [@media(max-width:800px)]:text-[16px] border-b w-full [@media(max-width:1000px)]:px-6 block py-4 bg-[#f5f5f5] font-semibold"
+              href=""
+              >Home</a
+            >
+          </li>
+          <li class="w-[80%] text-center">
+            <a
+              class="text-[14px] px-8 [@media(max-width:800px)]:text-[16px] border-b w-full [@media(max-width:1000px)]:px-6 block py-4 bg-[#f5f5f5] font-semibold"
+              href=""
+              >About us</a
+            >
+          </li>
+          <li class="w-[80%] text-center">
+            <a
+              class="text-[14px] px-8 [@media(max-width:800px)]:text-[16px] border-b w-full [@media(max-width:1000px)]:px-6 block py-4 bg-[#f5f5f5] font-semibold"
+              href=""
+              >Our Services</a
+            >
+          </li>
+          <li class="w-[80%] text-center">
+            <a
+              class="text-[14px] px-8 [@media(max-width:800px)]:text-[16px] border-b w-full [@media(max-width:1000px)]:px-6 block py-4 bg-[#f5f5f5] font-semibold"
+              href=""
+              >Our Facilities</a
+            >
+          </li>
+          <li class="w-[80%] text-center">
+            <a
+              class="text-[14px] px-8 [@media(max-width:800px)]:text-[16px] border-b w-full [@media(max-width:1000px)]:px-6 block py-4 bg-[#f5f5f5] font-semibold"
+              href=""
+              >How To Order</a
+            >
+          </li>
+          <li class="w-[80%] text-center">
+            <a
+              class="text-[14px] px-8 [@media(max-width:800px)]:text-[16px] border-b w-full [@media(max-width:1000px)]:px-6 block py-4 bg-[#f5f5f5] font-semibold"
+              href=""
+              >Blog</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
     <div
       class="relative after:opacity-70 max-h-[700px] overflow-hidden after:w-full after:h-full after:absolute after:top-0 after:left-0 bg-gradient [@media(max-width:800px)]:h-screen"
@@ -149,7 +209,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         <h1
           data-aos="fade-up"
           data-aos-duration="1000"
-          class="text-white text-[40px] font-semibold text-center mb-8 leading-tight [@media(max-width:1300px)]:mb-4 [@media(max-width:800px)]:text-[32px] [@media(max-width:600px)]:text-[24px]"
+          class="text-white text-[40px] font-semibold text-center mb-8 leading-tight [@media(max-width:1300px)]:mb-4 [@media(max-width:600px)]:!text-[24px] [@media(max-width:800px)]:text-[32px]"
         >
           Your Trusted Partner in Auto Spare Parts
         </h1>
@@ -389,10 +449,15 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       <p class="text-[#616161] text-[16px]">
         View a selection of our most popular makes
       </p>
-      <section class="splide pb-16" aria-label="Splide Basic HTML Example">
+      <section
+        class="splide pb-16 [@media(max-width:800px)]:pb-6"
+        aria-label="Splide Basic HTML Example"
+      >
         <div class="splide__track">
           <ul class="splide__list">
-            <li class="pt-10 splide__slide flex justify-center items-end">
+            <li
+              class="pt-10 splide__slide flex [@media(max-width:800px)]:pt-4 justify-center items-end"
+            >
               <img
                 src="./assets/logo/1.png"
                 class="w-[150px] hover:-translate-y-3 transition-all duration-500"
@@ -400,7 +465,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               />
             </li>
 
-            <li class="pt-10 splide__slide flex justify-center items-end">
+            <li
+              class="pt-10 splide__slide flex [@media(max-width:800px)]:pt-4 justify-center items-end"
+            >
               <img
                 src="./assets/logo/3.jpeg"
                 class="w-[150px] hover:-translate-y-3 transition-all duration-500"
@@ -408,49 +475,63 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               />
             </li>
 
-            <li class="pt-10 splide__slide flex justify-center items-end">
+            <li
+              class="pt-10 splide__slide flex [@media(max-width:800px)]:pt-4 justify-center items-end"
+            >
               <img
                 src="./assets/logo/4.png"
                 class="w-[150px] hover:-translate-y-3 transition-all duration-500"
                 alt=""
               />
             </li>
-            <li class="pt-10 splide__slide flex justify-center items-end">
+            <li
+              class="pt-10 splide__slide flex [@media(max-width:800px)]:pt-4 justify-center items-end"
+            >
               <img
                 src="./assets/logo/5.jpeg"
                 class="w-[80px] hover:-translate-y-3 transition-all duration-500"
                 alt=""
               />
             </li>
-            <li class="pt-10 splide__slide flex justify-center items-end">
+            <li
+              class="pt-10 splide__slide flex [@media(max-width:800px)]:pt-4 justify-center items-end"
+            >
               <img
                 src="./assets/logo/2.png"
                 class="w-[80px] hover:-translate-y-3 transition-all duration-500"
                 alt=""
               />
             </li>
-            <li class="pt-10 splide__slide flex justify-center items-end">
+            <li
+              class="pt-10 splide__slide flex [@media(max-width:800px)]:pt-4 justify-center items-end"
+            >
               <img
                 src="./assets/logo/6.png"
                 class="w-[80px] hover:-translate-y-3 transition-all duration-500"
                 alt=""
               />
             </li>
-            <li class="pt-10 splide__slide flex justify-center items-end">
+            <li
+              class="pt-10 splide__slide flex [@media(max-width:800px)]:pt-4 justify-center items-end"
+            >
               <img
                 src="./assets/logo/7.jpg"
                 class="w-[80px] hover:-translate-y-3 transition-all duration-500"
                 alt=""
               />
             </li>
-            <li class="pt-10 splide__slide flex justify-center items-end">
+            <li
+              class="pt-10 splide__slide flex [@media(max-width:800px)]:pt-4 justify-center items-end"
+            >
               <img
                 src="./assets/logo/8.png"
                 class="w-[80px] hover:-translate-y-3 transition-all duration-500"
                 alt=""
               />
             </li>
-            <li class="pt-10 splide__slide flex justify-center items-end">
+            <li
+              class="pt-10 splide__slide flex [@media(max-width:800px)]:pt-4 justify-center items-end"
+            >
               <img
                 src="./assets/logo/9.jpeg"
                 class="w-[80px] hover:-translate-y-3 transition-all duration-500"
@@ -1016,7 +1097,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           </div>
         </div>
       </div>
-      <div class="bg-black py-8 [@media(max-width:1200px)]:text-[14px]">
+      <div
+        class="bg-black py-8 [@media(max-width:1200px)]:text-[14px] [@media(max-width:600px)]:text-[12px]"
+      >
         <p class="text-[#bdbdbd] container text-center">
           Euro Tech.com ©2000- 2025 | Euro Tech, Inc. All Rights Reserved.
         </p>
@@ -1039,6 +1122,16 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
     referrerpolicy="no-referrer"
   ></script>
   <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+
+      // Toggle between left: 100% (hidden) and left: 0 (visible)
+      if (menu.style.left === "100%") {
+        menu.style.left = "0"; // Show the menu
+      } else {
+        menu.style.left = "100%"; // Hide the menu
+      }
+    }
     document.addEventListener("DOMContentLoaded", function () {
       AOS.init();
       var splide = new Splide(".splide", {
@@ -1056,7 +1149,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
             perPage: 6,
           },
           600: {
-            perPage: 4,
+            perPage: 3,
           },
         },
       });
@@ -1073,6 +1166,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
         breakpoints: {
           1000: {
             perPage: 2,
+          },
+          600: {
+            perPage: 1,
           },
         },
       });
@@ -1091,6 +1187,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
         breakpoints: {
           1000: {
             perPage: 2,
+          },
+          600: {
+            perPage: 1,
           },
         },
       });
